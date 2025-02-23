@@ -6,7 +6,7 @@ namespace lib_a
     class Point
     {
     public:
-        explicit Point2D(double x, double y);
+        explicit Point(double x, double y);
 
         double GetX() const;
 
