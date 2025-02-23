@@ -21,5 +21,6 @@ namespace lib_a
 
 std::ofstream& operator<<(std::ofstream& out, const lib_a::Point& point)
 {
-    return out << "Point(x=" << point.GetX() << ", y=" << point.GetY() << ")";
+    out << "Point(x=" << point.GetX() << ", y=" << point.GetY() << ")";
+    return out;
 }
