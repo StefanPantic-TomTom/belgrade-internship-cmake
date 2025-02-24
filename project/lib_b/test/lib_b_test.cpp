@@ -10,9 +10,10 @@ namespace test
         lib_a::Point a(1.0, 2.0);
         lib_a::Point b(3.0, 4.0);
 
-        if ((lib_b::CalculateDistance(a, b) - 2.82842) > 1e-7)
+        if (auto distance = lib_b::CalculateDistance(a, b);
+            (distance - 2.82843) > 1e-7)
         {
-            std::cerr << "Error: CalculateDistance(a, b) != 2.82842." << std::endl;
+            std::cerr << "Error: CalculateDistance(a, b) = " << lib_b::CalculateDistance(a, b) << "." << std::endl;
             return 1;
         }
 
