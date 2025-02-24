@@ -1,3 +1,5 @@
+#pragma once
+
 #include <lib_a/library.hpp>
 
 namespace lib_b
