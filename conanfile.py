@@ -60,7 +60,7 @@ class InternshipConanPackage(ConanFile):
         self.cpp_info.components["lib_a"].names["cmake"] = "lib_a"
         self.cpp_info.components["lib_a"].names["cmake_find_package"] = "lib_a"
         self.cpp_info.components["lib_a"].libs = ["lib_a"]
-        self.cpp_info.components["lib_a"].libdirs = ["lib_a"]
+        self.cpp_info.components["lib_a"].libdirs = ["lib"]
         self.cpp_info.components["lib_a"].includedirs = ["lib_a/include"]
         self.cpp_info.components["lib_a"].requires = [
             "fmt::fmt",
