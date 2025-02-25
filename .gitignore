@@ -267,5 +267,6 @@ CMakeUserPresets.json
 
 .vscode/
 build/
+test_package/build/
 
 # End of https://www.toptal.com/developers/gitignore/api/cmake,c++,ninja,intellij,clion,visualstudiocode

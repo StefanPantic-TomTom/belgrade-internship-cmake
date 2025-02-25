@@ -1,3 +1,5 @@
+#pragma once
+
 #include <fstream>
 #include <string>
 
@@ -12,10 +14,14 @@ namespace lib_a
 
         double GetY() const;
 
+        bool operator==(const Point& other) const;
+
+        bool operator!=(const Point& other) const;
+
     private:
         double m_x;
         double m_y;
     };
 }
 
-std::ofstream& operator<<(std::ofstream& out, const lib_a::Point& point);
+std::ostream& operator<<(std::ostream& out, const lib_a::Point& point);
