@@ -19,6 +19,16 @@ namespace lib_a
     {
         return m_y;
     }
+
+    bool Point::operator==(const Point& other) const
+    {
+        return m_x == other.m_x && m_y == other.m_y;
+    }
+
+    bool Point::operator!=(const Point& other) const
+    {
+        return !(*this == other);
+    }
 }
 
 std::ostream& operator<<(std::ostream& out, const lib_a::Point& point)

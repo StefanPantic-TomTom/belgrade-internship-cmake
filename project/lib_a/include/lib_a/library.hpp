@@ -14,6 +14,10 @@ namespace lib_a
 
         double GetY() const;
 
+        bool operator==(const Point& other) const;
+
+        bool operator!=(const Point& other) const;
+
     private:
         double m_x;
         double m_y;
